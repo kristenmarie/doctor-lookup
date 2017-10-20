@@ -13,12 +13,13 @@ $(document).ready(function(){
     $('form#doctor-search').hide();
     let query = $('#query').val();
     let name = $('#name').val();
+    let address = $('#address').val();
     let findDoctor = new DoctorLookup();
 
     if(query != '') {
-      findDoctor.getDoctors(query);
+      findDoctor.getDoctors(query, address);
     }else if(name != '') {
-      findDoctor.findByName(name);
+      findDoctor.findByName(name, address);
     } else {
       $('#no-input').show();
     }
