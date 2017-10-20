@@ -8,7 +8,7 @@ export class DoctorLookup {
     .then(function(response){
       let results = response.data;
       if(results.length == 0) {
-        $('#results').append(`<h2>No results matched your query.</h2>`);
+        $('#results').append(`<h2>No doctors matched your query.</h2>`);
       }
       results.forEach(function(result){
         $('#results').append(
@@ -25,8 +25,8 @@ export class DoctorLookup {
         }
       });
     })
-    .fail(function(){
-      console.log("something went wrong again");
+    .fail(function(error){
+      $('#results').append(`There was an error processing your request: ${error.responseText}. Please try again!`);
     });
    }
 
@@ -36,7 +36,7 @@ export class DoctorLookup {
      .then(function(response){
        let results = response.data;
        if(results.length == 0) {
-         $('#results').append(`<h2>No results matched your query.</h2>`);
+         $('#results').append(`<h2>No doctorss matched your query.</h2>`);
        }
        results.forEach(function(result){
          $('#results').append(
@@ -53,8 +53,8 @@ export class DoctorLookup {
          }
        });
      })
-     .fail(function(){
-       console.log("something went wrong again");
+     .fail(function(error){
+       $('#results').append(`There was an error processing your request: ${error.responseText}. Please try again!`);
      });
    }
 
