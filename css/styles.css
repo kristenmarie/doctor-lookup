@@ -3,9 +3,26 @@
 h5 {
   color:red;
 }
+
+body {
+  min-height: -webkit-calc(100% - 100px);
+}
+
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  background-color: #d0d5d8;
+  text-align: center;
+  padding-top: auto;
+  padding-top: 35px;
+}
+
 .container {
   text-align: center;
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 150px;
 }
 
 .jumbotron {
