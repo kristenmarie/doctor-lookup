@@ -35,9 +35,9 @@ export class DoctorLookup {
       $('#results').append(`There was an error processing your request: ${error.responseText}. Please try again!`);
     });
   })
- .fail(function(){
-   console.log("something went wrong again");
- });
+   .fail(function(error){
+     $('#results').append(`There was an error processing your request: ${error.responseText}. Please try again!`);
+   });
   }
 
   findByName(name, address) {
@@ -73,8 +73,8 @@ export class DoctorLookup {
       $('#results').append(`There was an error processing your request: ${error.responseText}. Please try again!`);
     });
   })
-  .fail(function(){
-   console.log("something went wrong again");
+  .fail(function(error){
+   $('#results').append(`There was an error processing your request: ${error.responseText}. Please try again!`);
   });
   }
 }

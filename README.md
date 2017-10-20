@@ -1,4 +1,4 @@
-# Dcotor Lookup
+# Doctor Lookup
 
 #### An application that allows user to search for doctors, 10.20.2017
 
@@ -13,6 +13,7 @@ This application allows the user to enter a medical issue or name and then retur
 * User can enter a medical issue and receive a list of doctors.
 * User can enter a doctors name to find a doctor that has that name.
 * If API call returns no results, inform user that no doctors were found from their query.
+* User can enter their address to find results near them (not hard coded to single area).
 
 ## Setup/Installation Requirements
 
@@ -30,7 +31,6 @@ There are no known bugs at this time.
 
 ## Future functionality
 
-* User can enter their location as well (Seattle no longer hard coded has location)
 * Add an additional API call to retrieve the list of specialities from the database before you query for a doctor, then return that list in a dropdown menu.
 * Create a list of "recently viewed" doctors and display it.
 * Create a list of "related doctors" and display it. You can define related however you wish.
