@@ -22,7 +22,13 @@ This application allows the user to enter a medical issue or name and then retur
 
 * Clone this repository
 * In terminal, navigate to this projects root directory (doctor-lookup)
-* In terminal, enter the following commands:
+* Ensure you have [Node.js](https://nodejs.org/en/) and [Gulp](https://gulpjs.com) installed
+* Add .env file by entering ``` $ touch .env ```
+* Navigate to [BetterDoctor](https://developer.betterdoctor.com/) to register for an API key.
+* In .env file add the following (enter your new API key where text reads KEY)
+``` exports.apiKey = "[KEY]" ```
+* Save everything 👍 👊
+* In terminal (while still in root directory), enter the following commands:
   * ``` $ npm install ```
   * ``` $ bower install ```
   * ``` $ gulp build ```
