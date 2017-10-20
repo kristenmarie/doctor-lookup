@@ -1,4 +1,6 @@
 # Doctor Lookup
+![image](https://user-images.githubusercontent.com/15882954/31843642-0ff593f6-b5a9-11e7-87b1-2f44752d6ae4.jpg)
+![image](https://user-images.githubusercontent.com/15882954/31843659-2aed5982-b5a9-11e7-868d-b635b1ea1e38.jpg)
 
 #### An application that allows user to search for doctors, 10.20.2017
 
@@ -42,7 +44,7 @@ Feel free to contact me at kristen.m.kulha@gmail.com
 
 ## Technologies Used
 
-_JavaScript, HTML, CSS, Node, Gulp, Jasmine, Karma, BetterDoctor API_
+_JavaScript, HTML, CSS, Node, Gulp, Jasmine, Karma, BetterDoctor API, Google Maps API_
 
 ### License
 
