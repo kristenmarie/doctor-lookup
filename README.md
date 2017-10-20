@@ -27,7 +27,7 @@ This application allows the user to enter a medical issue or name and then retur
 * Navigate to [BetterDoctor](https://developer.betterdoctor.com/) to register for an API key.
 * In .env file add the following (enter your new API key where text reads KEY)
 ``` exports.apiKey = "[KEY]" ```
-* Save everything 👍 👊
+* Save .env file 👍 👊
 * In terminal (while still in root directory), enter the following commands:
   * ``` $ npm install ```
   * ``` $ bower install ```
