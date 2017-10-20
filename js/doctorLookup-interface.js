@@ -5,7 +5,14 @@ $(document).ready(function(){
     event.preventDefault();
     $('form#doctor-search').hide();
     let query = $('#query').val();
+    let name = $('#name').val();
     let findDoctor = new DoctorLookup();
-    findDoctor.getDoctors(query);
+    if(query != '') {
+      findDoctor.getDoctors(query);
+    }else if(name != '') {
+      findDoctor.findByName(name);
+    } else {
+      $('#no-input').show();
+    }
   });
 });

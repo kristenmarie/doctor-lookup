@@ -13,10 +13,21 @@
         <h1>Doctor Lookup</h1>
       </div>
       <form id="doctor-search">
-        <h3>What's bugging you?</h3>
-        <div class="form-group">
-          <label for="query">Medical issue:</label>
-          <input id="query" type="text" class="form-control">
+        <div class="row">
+          <div class="col-6-md">
+            <h3>What's bugging you?</h3>
+            <div class="form-group">
+              <label for="query">Medical issue:</label>
+              <input id="query" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-6-md">
+            <h3>Find by name!</h3>
+            <div class="form-group">
+              <label for="name">Enter first or last name(or both!):</label>
+              <input id="name" type="text" name="name" class="form-control">
+            </div>
+          </div>
         </div>
         <button type="submit" name="button" class="btn-lg btn-primary">Find a Doctor</button>
       </form>
