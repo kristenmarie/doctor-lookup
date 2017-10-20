@@ -31,6 +31,14 @@ footer {
   background-color: #81bbdb;
 }
 
+.loader {
+  display: none;
+}
+
+#waiting {
+  display: none;
+}
+
 #results {
   display: none;
 }
