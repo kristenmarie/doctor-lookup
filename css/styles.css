@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway');
+
+h5 {
+  color:red;
+}
+.container {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  background-color: #81bbdb;
+}
 
 #results {
   display: none;
