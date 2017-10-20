@@ -1,5 +1,5 @@
 # Doctor Lookup
-![image](https://user-images.githubusercontent.com/15882954/31843642-0ff593f6-b5a9-11e7-87b1-2f44752d6ae4.jpg)![image](https://user-images.githubusercontent.com/15882954/31843659-2aed5982-b5a9-11e7-868d-b635b1ea1e38.jpg)
+![image](https://user-images.githubusercontent.com/15882954/31843830-f70ecc1c-b5a9-11e7-973f-59c1e13adce9.jpg)
 
 #### An application that allows user to search for doctors, 10.20.2017
 
@@ -15,6 +15,8 @@ This application allows the user to enter a medical issue or name and then retur
 * User can enter a doctors name to find a doctor that has that name.
 * If API call returns no results, inform user that no doctors were found from their query.
 * User can enter their address to find results near them (not hard coded to single area).
+
+![image](https://user-images.githubusercontent.com/15882954/31843842-0a1d4f72-b5aa-11e7-9121-94b548b97860.jpg)
 
 ## Setup/Installation Requirements
 
