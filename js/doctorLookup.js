@@ -7,6 +7,9 @@ export class DoctorLookup {
     $.get(`https://api.betterdoctor.com/2016-03-01/doctors?query=${ search }&location=47.625703%2C-122.354744%2C50&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=${ apiKey }`)
     .then(function(response){
       let results = response.data;
+      if(results.length == 0) {
+        $('#results').append(`<h2>No results matched your query.</h2>`);
+      }
       results.forEach(function(result){
         $('#results').append(
           `<h3>Name: ${result.profile.first_name} ${result.profile.last_name}</h3>
@@ -32,6 +35,9 @@ export class DoctorLookup {
      $.get(`https://api.betterdoctor.com/2016-03-01/doctors?name=${ doctor }&location=47.625703%2C-122.354744%2C50&user_location=37.773%2C-122.413&skip=0&limit=10&user_key=${ apiKey }`)
      .then(function(response){
        let results = response.data;
+       if(results.length == 0) {
+         $('#results').append(`<h2>No results matched your query.</h2>`);
+       }
        results.forEach(function(result){
          $('#results').append(
            `<h3>Name: ${result.profile.first_name} ${result.profile.last_name}</h3>
