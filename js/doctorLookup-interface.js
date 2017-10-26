@@ -17,9 +17,9 @@ $(document).ready(function(){
     let findDoctor = new DoctorLookup();
 
     if(query != '') {
-      findDoctor.getDoctors(query, address);
+      findDoctor.getDoctors(query, address, "query");
     }else if(name != '') {
-      findDoctor.findByName(name, address);
+      findDoctor.getDoctors(name, address, "name");
     } else {
       $('#no-input').show();
     }
